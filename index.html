@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#8f2446">
+  <title>إلى أمي الحبيبة ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --wine: #542d20;
+      --rose: #8b5140;
+      --pink: #d8b99a;
+      --cream: #e8d3a6;
+      --gold: #9a7445;
+      --ink: #241b14;
+      --paper: #ddc18a;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Cairo", sans-serif;
+      background:
+        radial-gradient(ellipse at 18% 12%, rgba(255,244,205,.42), transparent 34rem),
+        radial-gradient(ellipse at 86% 78%, rgba(112,75,38,.13), transparent 30rem),
+        repeating-linear-gradient(2deg, rgba(76,48,25,.025) 0 1px, transparent 1px 5px),
+        linear-gradient(135deg, #d8bd87, #ead9ad 48%, #d1b47c);
+      overflow-x: hidden;
+      position: relative;
+    }
+    body::before {
+      content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 0; opacity: .17;
+      background-image: radial-gradient(rgba(50,32,16,.55) .55px, transparent .8px);
+      background-size: 5px 5px; mix-blend-mode: multiply;
+    }
+    main, header, footer { position: relative; z-index: 1; }
+    .petals { position: fixed; inset: 0; pointer-events: none; overflow: hidden; z-index: 5; }
+    .petal {
+      position: absolute; top: -40px; width: 13px; height: 19px;
+      border-radius: 80% 10% 80% 10%; background: linear-gradient(135deg,#b77b62,#75402e);
+      opacity: .62; animation: fall linear infinite;
+    }
+    @keyframes fall { to { transform: translate3d(var(--drift),110vh,0) rotate(650deg); } }
+    .hero {
+      min-height: 100svh; display: flex; flex-direction: column; align-items: center;
+      justify-content: center; text-align: center; padding: 55px 20px 65px; position: relative;
+    }
+    .eyebrow { color: #65432c; letter-spacing: 1px; font-size: .9rem; font-weight: 700; }
+    h1 { font-family: "Amiri", serif; color: var(--wine); font-size: clamp(2.5rem,8vw,5rem); line-height: 1.25; margin: 12px 0; }
+    .hero p { max-width: 620px; font-size: 1.05rem; line-height: 2; margin: 4px auto 18px; }
+    .birth-date {
+      display: inline-flex; align-items: center; gap: 12px; margin: 0 auto 25px;
+      padding: 7px 18px; color: #4c3020; border-top: 1px solid rgba(75,48,29,.55);
+      border-bottom: 1px solid rgba(75,48,29,.55); font-family: "Amiri",serif; font-size: 1.12rem;
+      letter-spacing: .5px;
+    }
+    .birth-date span { color: #8b5b35; }
+    .rose-wrap { width: 190px; height: 205px; margin: 8px auto 14px; position: relative; animation: float 4s ease-in-out infinite; }
+    @keyframes float { 50% { transform: translateY(-9px); } }
+    .rose-svg { width: 100%; height: 100%; overflow: visible; }
+    .rose-petal { transform-box: fill-box; transform-origin: center; animation: bloom 2.4s cubic-bezier(.2,.8,.2,1) both; }
+    .rose-petal:nth-child(2) { animation-delay: .18s; }
+    .rose-petal:nth-child(3) { animation-delay: .34s; }
+    .rose-petal:nth-child(4) { animation-delay: .5s; }
+    @keyframes bloom { from { transform: scale(.15) rotate(-25deg); opacity: .2; } to { transform: scale(1) rotate(0); opacity: 1; } }
+    .btn {
+      display: inline-block; border: 0; border-radius: 999px; padding: 13px 27px;
+      background: linear-gradient(135deg,#4a2b20,#81513a); color: #f5e8c9;
+      text-decoration: none; font: 700 1rem "Cairo",sans-serif; cursor: pointer;
+      box-shadow: 0 8px 22px rgba(63,39,23,.24); transition: transform .2s, box-shadow .2s;
+      border: 1px solid rgba(236,213,165,.65);
+    }
+    .btn:hover { transform: translateY(-3px); box-shadow: 0 13px 28px rgba(63,39,23,.3); }
+    .music-toggle {
+      position: fixed; top: 14px; right: 14px; z-index: 20;
+      padding: 10px 18px; font-size: .9rem;
+    }
+    section { padding: 70px 20px; }
+    .panel { width: min(760px,100%); margin: auto; text-align: center; }
+    .section-title { font: 700 clamp(2rem,6vw,3rem) "Amiri",serif; color: var(--wine); margin: 0 0 18px; }
+    .divider { color: var(--gold); font-size: 1.5rem; margin: 10px 0 22px; }
+    .letter {
+      background: rgba(245,231,194,.48); border: 1px solid rgba(91,61,35,.48);
+      border-radius: 4px; padding: clamp(23px,5vw,42px); box-shadow: 0 12px 32px rgba(74,49,26,.13);
+      outline: 1px solid rgba(255,245,213,.35); outline-offset: -7px;
+    }
+    .letter p { font: 1.25rem/2.2 "Amiri",serif; margin: 0; }
+    .signature { color: var(--rose); margin-top: 20px; font-weight: 800; }
+    .cake-area { background: linear-gradient(180deg,rgba(247,220,227,.25),rgba(255,248,241,.2)); }
+    .cake { width: 210px; height: 190px; position: relative; margin: 15px auto 25px; }
+    .plate { position: absolute; bottom: 10px; left: 5px; width: 200px; height: 20px; border-radius: 50%; background: #b99768; box-shadow: 0 5px 0 #8f704b; }
+    .cake-bottom { position: absolute; bottom: 28px; left: 25px; width: 160px; height: 65px; border-radius: 12px 12px 18px 18px; background: #a86e54; box-shadow: inset 0 -9px rgba(69,39,26,.16); }
+    .cake-top { position: absolute; bottom: 82px; left: 25px; width: 160px; height: 38px; border-radius: 50%; background: #ead6ad; border: 4px solid #a86e54; }
+    .icing { position: absolute; bottom: 65px; left: 35px; width: 140px; height: 30px; border-radius: 0 0 45% 45%; border-bottom: 7px solid #ead6ad; }
+    .candle { position: absolute; bottom: 116px; left: 99px; width: 12px; height: 43px; border-radius: 4px; background: repeating-linear-gradient(45deg,#f1e2bd 0 5px,#8d5740 5px 10px); }
+    .flame { position: absolute; left: 96px; bottom: 157px; width: 18px; height: 25px; border-radius: 50% 50% 50% 0; transform: rotate(45deg); background: #ffc85c; box-shadow: 0 0 18px #ffb83e; animation: flicker .7s ease-in-out infinite alternate; }
+    @keyframes flicker { to { transform: rotate(38deg) scale(.83); opacity: .8; } }
+    .birthday-line { font: 700 clamp(1.55rem,5vw,2.4rem)/1.8 "Amiri",serif; color: var(--wine); }
+    .halim-card {
+      display: flex; gap: 16px; justify-content: center; align-items: center; flex-wrap: wrap;
+      margin: 28px auto; max-width: 560px;
+    }
+    .portrait {
+      width: 104px; height: 125px; object-fit: cover; border-radius: 2px;
+      border: 5px solid #ead8ae; outline: 1px solid rgba(75,49,29,.72);
+      box-shadow: 0 8px 22px rgba(58,39,23,.2); filter: sepia(.78) contrast(1.04);
+    }
+    .song-box { background: rgba(241,224,185,.55); border: 1px solid rgba(87,58,34,.35); border-radius: 4px; padding: 24px; box-shadow: 0 12px 30px rgba(74,49,26,.12); }
+    .song-box p { line-height: 1.9; margin: 7px 0 18px; }
+    .credit { font-size: .72rem; color: #987d7e; margin-top: 15px; }
+    footer { text-align: center; padding: 30px 15px 45px; color: #684a31; font-size: .9rem; }
+    .reveal { opacity: 0; transform: translateY(22px); transition: opacity .8s, transform .8s; }
+    .reveal.show { opacity: 1; transform: translateY(0); }
+    @media (prefers-reduced-motion: reduce) {
+      *,*::before,*::after { animation-duration: .01ms !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
+    }
+  </style>
+</head>
+<body>
+  <audio id="background-music" src="music.mp3" loop preload="auto"></audio>
+  <button class="btn music-toggle" id="music-toggle" type="button" aria-pressed="false">▶ تشغيل الموسيقى</button>
+  <div class="petals" id="petals" aria-hidden="true"></div>
+
+  <header class="hero">
+    <div class="eyebrow">إلى أجمل إنسانة في الدنيا</div>
+    <div class="rose-wrap" aria-label="وردة جورية كرتونية">
+      <svg class="rose-svg" viewBox="0 0 200 210" role="img">
+        <path d="M100 112 C103 145 91 166 99 198" stroke="#66845a" stroke-width="7" fill="none" stroke-linecap="round"/>
+        <path d="M99 165 C67 143 52 157 75 174 C87 180 95 175 99 165Z" fill="#83a56e"/>
+        <path d="M101 180 C132 153 150 166 124 184 C113 190 105 187 101 180Z" fill="#71965f"/>
+        <g fill="#98513f" stroke="#633526" stroke-width="1.5">
+          <path class="rose-petal" d="M100 100 C58 89 66 43 100 48 C134 43 142 89 100 100Z"/>
+          <path class="rose-petal" d="M100 100 C53 111 39 76 67 60 C81 52 95 68 100 100Z"/>
+          <path class="rose-petal" d="M100 100 C147 111 161 76 133 60 C119 52 105 68 100 100Z"/>
+          <path class="rose-petal" d="M100 96 C76 84 83 57 101 64 C121 59 127 84 100 96Z" fill="#b8755b"/>
+          <path class="rose-petal" d="M100 88 C86 81 91 69 101 73 C111 69 115 81 100 88Z" fill="#d09a76"/>
+        </g>
+        <path d="M100 92 C90 83 96 77 103 81 C111 78 114 87 100 92Z" fill="#633526"/>
+      </svg>
+    </div>
+    <h1>إلى أمي الحبيبة</h1>
+    <p>في يوم ميلادك، أردت أن أصنع لكِ شيئاً صغيراً يحمل جزءاً من الحب الكبير الذي في قلبي.</p>
+    <div class="birth-date">٢٠ نوفمبر ١٩٨٤ <span>✦</span> 20 · 11 · 1984</div>
+    <a class="btn" href="#message">افتحي رسالتكِ يا أمي</a>
+  </header>
+
+  <main>
+    <section id="message">
+      <div class="panel reveal">
+        <h2 class="section-title">رسالة من القلب</h2>
+        <div class="divider">❀ ✧ ❀</div>
+        <div class="letter">
+          <p id="typed-message"></p>
+          <div class="signature">ابنكِ الذي يحبكِ كثيراً ❤️</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cake-area" id="birthday">
+      <div class="panel reveal">
+        <h2 class="section-title">هذا اليوم لكِ وحدكِ</h2>
+        <div class="cake" aria-label="كعكة عيد ميلاد كرتونية">
+          <div class="flame"></div><div class="candle"></div>
+          <div class="cake-top"></div><div class="icing"></div>
+          <div class="cake-bottom"></div><div class="plate"></div>
+        </div>
+        <div class="birthday-line">كل عام وأنتِ نبض البيت ونور العمر، وكل عام وأنتِ بخير</div>
+        <div class="divider">♡ ❀ ♡</div>
+        <p>أتمنى أن تحمل لكِ أيامكِ القادمة فرحاً يشبه قلبكِ الجميل.</p>
+      </div>
+    </section>
+
+    <section id="song">
+      <div class="panel reveal">
+        <h2 class="section-title">لأن بعض الأغاني تشبه الذكريات</h2>
+        <div class="halim-card">
+          <img class="portrait" src="https://commons.wikimedia.org/wiki/Special:FilePath/%D8%B9%D8%A8%D8%AF%20%D8%A7%D9%84%D8%AD%D9%84%D9%8A%D9%85%20%D8%AD%D8%A7%D9%81%D8%B8.jpg" alt="صورة عبد الحليم حافظ" loading="lazy">
+          <img class="portrait" src="https://commons.wikimedia.org/wiki/Special:FilePath/Abdel%20Halim%20Hafez%20in%201971.jpg" alt="صورة أخرى لعبد الحليم حافظ" loading="lazy">
+        </div>
+        <div class="song-box">
+          <div class="eyebrow">إهداء موسيقي خاص</div>
+          <h3 class="section-title" style="font-size:2rem;margin:8px 0">جبّار — عبد الحليم حافظ</h3>
+          <p>لأنكِ تستحقين أجمل الألحان... استمعي إلى أغنيتكِ.</p>
+          <a class="btn" href="https://www.youtube.com/results?search_query=%D8%B9%D8%A8%D8%AF+%D8%A7%D9%84%D8%AD%D9%84%D9%8A%D9%85+%D8%AD%D8%A7%D9%81%D8%B8+%D8%AC%D8%A8%D8%A7%D8%B1" target="_blank" rel="noopener noreferrer">استمعي إلى أغنيتكِ 🎶</a>
+        </div>
+        <div class="credit">
+          صورة عبد الحليم حافظ: ويكيميديا كومنز —
+          <a href="https://commons.wikimedia.org/wiki/File:%D8%B9%D8%A8%D8%AF_%D8%A7%D9%84%D8%AD%D9%84%D9%8A%D9%85_%D8%AD%D8%A7%D9%81%D8%B8.jpg" target="_blank" rel="noopener">ترخيص الصورة ومصدرها</a>.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>صُنِع بكل الحب... لأغلى أم في الدنيا 🌹</footer>
+
+  <script>
+    // بتلات ورد متحركة
+    const petals = document.getElementById('petals');
+    for (let i = 0; i < 19; i++) {
+      const p = document.createElement('span');
+      p.className = 'petal';
+      p.style.left = (Math.random() * 100) + '%';
+      p.style.animationDuration = (9 + Math.random() * 10) + 's';
+      p.style.animationDelay = (-Math.random() * 16) + 's';
+      p.style.setProperty('--drift', (Math.random() * 150 - 75) + 'px');
+      p.style.opacity = (0.25 + Math.random() * 0.5).toFixed(2);
+      p.style.transform = `scale(${0.55 + Math.random() * 0.8})`;
+      petals.appendChild(p);
+    }
+
+    // رسالة تظهر تدريجياً
+    const message = 'أمي الحبيبة، قد لا تكفي الكلمات لأخبركِ كم أحبكِ، ولا تكفي الهدايا لأرد لكِ جزءاً من فضلكِ. أردت فقط أن أهديكِ هذه اللحظات الصغيرة لتعرفي دائماً أنكِ أجمل نعمة في حياتي، وأن وجودكِ يجعل لكل شيء معنى أجمل. الله يحفظكِ لي ويملأ أيامكِ سعادة وراحة.';
+    const typed = document.getElementById('typed-message');
+    let started = false;
+    const typeMessage = () => {
+      if (started) return;
+      started = true;
+      let i = 0;
+      const timer = setInterval(() => {
+        typed.textContent += message.charAt(i++);
+        if (i >= message.length) clearInterval(timer);
+      }, 48);
+    };
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+          if (entry.target.closest('#message')) typeMessage();
+        }
+      });
+    }, { threshold: 0.18 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    document.querySelector('a[href="#message"]').addEventListener('click', () => setTimeout(typeMessage, 300));
+
+    // تشغيل الموسيقى بعد أول تفاعل من الزائرة، لأن المتصفحات تمنع
+    // التشغيل التلقائي بالصوت قبل تفاعل المستخدم.
+    const music = document.getElementById('background-music');
+    const musicButton = document.getElementById('music-toggle');
+
+    async function startMusic() {
+      try {
+        await music.play();
+        musicButton.textContent = 'Ⅱ إيقاف الموسيقى';
+        musicButton.setAttribute('aria-pressed', 'true');
+      } catch (error) {
+        musicButton.textContent = '▶ تشغيل الموسيقى';
+        musicButton.setAttribute('aria-pressed', 'false');
+      }
+    }
+
+    musicButton.addEventListener('click', async () => {
+      if (music.paused) {
+        await startMusic();
+      } else {
+        music.pause();
+        musicButton.textContent = '▶ تشغيل الموسيقى';
+        musicButton.setAttribute('aria-pressed', 'false');
+      }
+    });
+
+    // محاولة تشغيل تلقائي؛ إذا منعها المتصفح سيبدأ التشغيل عند الضغط على الزر.
+    startMusic();
+
+  </script>
+</body>
+</html>
